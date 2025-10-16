@@ -4,41 +4,41 @@ body {
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.main__image-matrix {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.main__image-matrix img {
     width: 100%;
 }
-.aaa .more_inf {
+.main__more-link {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.aaa { text-align: center;
+.main__image-matrix { text-align: center;
 }
 }
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
-.task {
+.form__task {
     width: 56%;
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.form__todo-block {
     display: flex;
 }
 ul {
     margin:0;
     padding: 0px;
 }
-li, h3 {
+li {
     list-style:none;
 }
 input,button{
@@ -57,8 +57,7 @@ button:hover {
     color: #3a3A3a;
 }
 /* Heading */
-h2,
-label[for='new-task'] {
+h2 {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -138,11 +137,11 @@ ul li input[type=text] {
     display:none
 }
 
-ul li.editMode input[type=text] {
+ul li.form__todo-item_edit input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+ul li.form__todo-item_edit label {
     display:none;
 }
