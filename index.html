@@ -19,45 +19,45 @@
     </section>
     <section class="form">
       <div class="form__todo">
-        <h2>Add Item</h2>
-        <div class="form__todo-block">
-          <input id="new-task" class="form__task" type="text">
+        <h2 class="form__todo-title">Add Item</h2>
+        <div class="form__todo-block form__todo-block_add">
+          <input class="form__task form__task_add" type="text">
           <button>Add</button>
         </div>
       </div>
       <div class="form__todo">
-        <h2>Todo</h2>
-        <ul class="form__todo-list" id="incompleteTasks">
+        <h2 class="form__todo-title">Todo</h2>
+        <ul class="form__todo-list form__todo-list_incomplete">
           <li class="form__todo-item">
-            <input type="checkbox">
-            <label class="task form__task-name">Pay Bills</label>
-            <input type="text" class="form__hidden-task task">
-            <button class="edit form__edit-btn">Edit</button>
-            <button class="delete form__delete-btn">
-              <img src="./remove.svg" alt="Delete icon">
+            <input class="form__checkbox" type="checkbox">
+            <label class="form__task-name task ">Pay Bills</label>
+            <input class="form__hidden-task task" type="text">
+            <button class="form__edit-btn">Edit</button>
+            <button class="form__delete-btn">
+              <img class="form__delete-icon" src="./remove.svg" alt="Delete icon">
             </button>
           </li>
           <li class="form__todo-item_edit form__todo-item">
-            <input type="checkbox">
+            <input class="form__checkbox" type="checkbox">
             <label class="task form__task-name">Go Shopping</label>
             <input type="text" value="Go Shopping" class="form__hidden-task task">
-            <button class="edit form__edit-btn">Save</button>
-            <button class="delete form__delete-btn">
-              <img src="./remove.svg" alt="Delete icon">
+            <button class="form__edit-btn">Save</button>
+            <button class="form__delete-btn">
+              <img class="form__delete-icon" src="./remove.svg" alt="Delete icon">
             </button>
           </li>
         </ul>
       </div>
       <div class="form__todo">
-        <h2>Completed</h2>
-        <ul class="form__todo-list" id="completed-tasks">
+        <h2 class="form__todo-title">Completed</h2>
+        <ul class="form__todo-list form__todo-list_complete">
           <li class="form__todo-item">
-            <input type="checkbox" checked>
-            <label class="task form__task-name">See the Doctor</label>
-            <input type="text" class="task form__task">
-            <button class="edit form__edit-btn">Edit</button>
-            <button class="delete form__delete-btn">
-              <img src="./remove.svg" alt="Delete icon">
+            <input class="form__checkbox" type="checkbox" checked>
+            <label class="form__task-name task">See the Doctor</label>
+            <input class="task form__hidden-task" type="text">
+            <button class="form__edit-btn">Edit</button>
+            <button class="form__delete-btn">
+              <img class="form__delete-icon" src="./remove.svg" alt="Delete icon">
             </button>
           </li>
         </ul>
